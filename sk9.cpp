@@ -8,7 +8,7 @@ class rak{
 		void hasil();
 	private:
 		int buku[24],buku2[12][12];
-    	int br, kl, tmp ;
+    		int br, kl, tmp ;
 	  	int i = 0;
 };
 
@@ -16,12 +16,12 @@ void rak::input(){
 	cout << "Masukkan data nomor buku: ";
   	cout << endl << endl;
   	for(int i = 0; i < 24; i++){
-    	cout << "Nomor Buku ke-[" << i << "]: ";
-    	cin >> buku[i];
+    		cout << "Nomor Buku ke-[" << i << "]: ";
+    		cin >> buku[i];
   	}
   	cout << "\nData nomor buku: ";
   	for(int i=0; i < 24; i++){
-    	cout << buku[i] << " ";
+    		cout << buku[i] << " ";
   	}
   	cout << endl << endl;
   	for(int i = 0; i < 70; i++){
@@ -32,17 +32,17 @@ void rak::input(){
 
 void rak::sorting(){
   	for (int i = 0; i < 24; i++){ 
-    	for(int j = i+1; j < 24; j++ ){
-      		if (buku[i] > buku[j]){
-        		tmp = buku[i];
-        		buku[i] = buku[j];
-        		buku[j] = tmp;   
-      		}
-    	}
+    		for(int j = i+1; j < 24; j++ ){
+      			if (buku[i] > buku[j]){
+        			tmp = buku[i];
+        			buku[i] = buku[j];
+        			buku[j] = tmp;   
+      			}
+    		}
   	}
   	cout << "Nomor buku setelah diurutkan : ";
   	for(int i = 0; i < 24; i++){
-    	cout << buku[i] << "  ";
+    		cout << buku[i] << "  ";
   	}
   	cout << endl;
 }
