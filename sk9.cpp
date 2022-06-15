@@ -44,7 +44,7 @@ void rak::sorting(){
   	for(int i = 0; i < 24; i++){
     		cout << buku[i] << "  ";
   	}
-  	cout << endl;
+  	cout <<endl;
 }
 
 void rak::hasil(){
